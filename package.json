@@ -1,0 +1,31 @@
+{
+  "name": "graphqlfazt",
+  "version": "1.0.0",
+  "description": "Video : https://www.youtube.com/watch?v=Wl8O6wW4FJU \r Express \r Graphql\r Babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.6",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.19",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1"
+  }
+}
